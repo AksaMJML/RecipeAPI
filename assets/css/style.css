@@ -1,6 +1,7 @@
 :root{
     --light-bg : #f8f7f6;
     --text-dark : #012a3d;
+    --primary-color : #04a5f0;
 }
 
 *{
@@ -39,3 +40,18 @@ h1{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
 }
+
+#search-input{
+    padding: 15px 20px;
+    font-size: 1rem;
+    flex-grow: 1;
+    border: 1px solid #e9ecef;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.5s ease;
+}
+
+#search-input:focus{
+    border-color: var(--primary-color);
+}
+
