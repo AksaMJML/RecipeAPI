@@ -1,6 +1,6 @@
 :root{
-    --light-bg : #dafcd7b0;
-    --text-dark : #42afe1;
+    --light-bg : #f8f7f6;
+    --text-dark : #012a3d;
 }
 
 *{
@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family: "Cormorant+Garamond", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.7;
     padding: 30px 15px;
     background-color: var(--light-bg);
@@ -26,5 +26,16 @@ body{
 h1{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
