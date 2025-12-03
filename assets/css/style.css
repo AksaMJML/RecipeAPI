@@ -1,0 +1,18 @@
+:root{
+    --light-bg : #dafcd7b0;
+    --text-dark : #42afe1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Cormorant+Garamond", sans-serif;
+    line-height: 1.7;
+    padding: 30px 15px;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
