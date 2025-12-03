@@ -1,7 +1,8 @@
 :root{
     --light-bg : #f8f7f6;
-    --text-dark : #012a3d;
-    --primary-color : #04a5f0;
+    --text-dark : #005b11;
+    --primary-color : #0e3a4e;
+    --bg-hov-color : #006b9d;
 }
 
 *{
@@ -36,13 +37,15 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    margin-inline: auto;
     max-width: 600px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 #search-input{
-    padding: 15px 20px;
+    padding: 14px 20px;
     font-size: 1rem;
     flex-grow: 1;
     border: 1px solid #e9ecef;
@@ -53,5 +56,21 @@ h1{
 
 #search-input:focus{
     border-color: var(--primary-color);
+}
+
+#search-button{
+    padding: 13px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color: var(--bg-hov-color);
 }
 
