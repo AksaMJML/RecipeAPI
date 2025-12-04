@@ -131,3 +131,116 @@ h1 {
     padding: 15px;
     margin: 0;
 }
+
+.modal-container {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    transition: opacity 0.3s ease, visibility 0s ease 0s;
+}
+
+.modal-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s ease 0.3s,
+        backdrop-filter 0.3s ease;
+    backdrop-filter: blur(0px);
+
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 35px 40px;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.modal-container.hidden .modal-content {
+    transform: scale(0.95);
+}
+
+.modal-content .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--light-bg);
+    border: 1px solid #e9ecef;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #6c757d;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+
+/*.modal-content .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #6c757d;
+    overflow: hidden;
+    font-size: 0;
+    color: white on white background;
+    opacity: 0;
+
+}
+
+ .modal-content .modal-close-btn i {  
+    font-size: 30px !important;
+    color: black !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+} */
+
+.modal-content .modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--light-bg);
+    border: 1px solid #e9ecef;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #6c757d;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+.modal-content .modal-close-btn:hover {
+    transform: rotate(135deg);
+    color: var(--text-dark);
+    background-color: #e2e6ea;
+}
