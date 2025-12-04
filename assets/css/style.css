@@ -1,17 +1,17 @@
-:root{
-    --light-bg : #f8f7f6;
-    --text-dark : #005b11;
-    --primary-color : #0e3a4e;
-    --bg-hov-color : #006b9d;
+:root {
+    --light-bg: #f8f7f6;
+    --text-dark: #005b11;
+    --primary-color: #0e3a4e;
+    --bg-hov-color: #006b9d;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     line-height: 1.7;
     padding: 30px 15px;
@@ -19,24 +19,24 @@ body{
     color: var(--text-dark);
 }
 
-.recipe-api-container{
+.recipe-api-container {
     max-width: 1200;
     padding: 0 15px;
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 30px;
     letter-spacing: -1px;
 }
 
-.search-box{
+.search-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-inline: auto;
     max-width: 600px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -44,7 +44,7 @@ h1{
     transition: background-color 0.3s ease;
 }
 
-#search-input{
+#search-input {
     padding: 14px 20px;
     font-size: 1rem;
     flex-grow: 1;
@@ -54,11 +54,11 @@ h1{
     transition: border-color 0.5s ease;
 }
 
-#search-input:focus{
+#search-input:focus {
     border-color: var(--primary-color);
 }
 
-#search-button{
+#search-button {
     padding: 13px 25px;
     font-size: 1rem;
     font-weight: 600;
@@ -70,7 +70,26 @@ h1{
     cursor: pointer;
 }
 
-#search-button:hover{
+#search-button:hover {
     background-color: var(--bg-hov-color);
 }
 
+.random-recipe-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color: #006b9d;
+    color: #e9ecef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+
+}
+
+.random-recipe-btn:hover{
+    background-color: #006b9d;
+    transform: translateY(-2px);
+}
