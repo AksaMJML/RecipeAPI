@@ -23,6 +23,7 @@ body {
     max-width: 1200;
     padding: 0 15px;
     text-align: center;
+    margin-inline: auto;
 }
 
 h1 {
@@ -89,7 +90,44 @@ h1 {
 
 }
 
-.random-recipe-btn:hover{
+.random-recipe-btn:hover {
     background-color: #006b9d;
     transform: translateY(-2px);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.recipe-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.recipe-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.recipe-item h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0;
 }
